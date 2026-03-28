@@ -1,0 +1,37 @@
+{
+  "name": "phonetracker-advanced",
+  "version": "2.0.0",
+  "description": "Advanced phone number intelligence CLI - validation, carrier lookup, geolocation & OSINT enrichment",
+  "type": "module",
+  "bin": {
+    "tracker": "./bin/tracker.js",
+    "phonetracker": "./bin/tracker.js"
+  },
+  "scripts": {
+    "start": "node bin/tracker.js",
+    "dev": "node --watch bin/tracker.js",
+    "lookup": "node bin/tracker.js lookup",
+    "batch": "node bin/tracker.js batch"
+  },
+  "keywords": [
+    "phone", "tracker", "cli", "osint", "carrier", "geolocation", "phonenumber"
+  ],
+  "author": "PhoneTracker Advanced",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "boxen": "^7.1.1",
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.5",
+    "commander": "^12.1.0",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.5",
+    "figlet": "^1.7.0",
+    "fs-extra": "^11.2.0",
+    "gradient-string": "^2.0.2",
+    "inquirer": "^10.1.0",
+    "libphonenumber-js": "^1.11.4",
+    "node-cache": "^5.1.2",
+    "ora": "^8.1.0"
+  }
+}
